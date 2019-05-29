@@ -3,13 +3,127 @@
 	justify-content: space-between;
 }
 
+.bd-example {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+#carouselExampleCaptions {
+	width: 50%;
+	height: 50%;
+	border-radius: 10px;
+}
+
+.about-container, .portfolio-container {
+	background-color: #0C4A60;
+	width: 80%;
+	border-radius: 10px;
+	color: white;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+/*#goOut-img {
+	background: url('/images/Photos/fadedGoOut.png');
+	height: 150px;
+	width: 200px;
+}*/
+
+/*#goOut-img:hover {
+	background: url('/images/Photos/goOut.png');
+}*/
+
+.projectHeader {
+	margin-top: 10px;
+}
+
+.projects-list {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.projects .header {
+	margin-bottom: 20px;
+}
+
+.github-image {
+	height: 40px;
+	border-radius: 50px;
+}
+
+.github-image:hover {
+	background-color: white;
+}
+
+.click-description {
+	margin-bottom: 10px;
+}
+
+.projects-list {
+	list-style: none;
+}
+
+.projects-list li {
+	width: 458px;
+}
+
+.project {
+	height: 250px;
+	border-radius: 10px;
+}
+
+/*.description {
+	height: 0px;
+}*/
+
+.show-description {
+	height: 150px;
+}
+
+.paragraph-div {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.overall-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
 
+
+.header {
+	color: #EF6C33;
+	margin-left: 20px;
+	padding-top: 20px;
+}
 
 /*dark blue, coral, teal, grey*/
 /*Hex: 0C4A60 / EF6C33 / ABDFF1 / E1DDDB*/
+.carousel-label {
+	color: white;
+	font-size: 10px;
+}
 
+.se-span {
+	font-size: 18px;
+	font-style: italic;
+	/*color: white;*/
+}
 
+.carousel-caption {
+	background-color: #0C4A60;
+	border-radius: 10px;
+	
+}
+
+.caption-background {
+	background-color: #0C4A60;
+
+}
 
 .navbar {
 	background-color: #0C4A60;
@@ -29,5 +143,5 @@
 }
 
 body {
-	background-color: #E1DDDB;
+	background-color: #ABDFF1;
 }

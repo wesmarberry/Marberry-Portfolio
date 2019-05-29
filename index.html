@@ -7,6 +7,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+</head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
@@ -14,7 +16,7 @@
 	
 	<nav class="navbar sticky-top navbar-expand-lg navbar-light ">
 		<div class='myContainer'>
-	  		<h2><a class="navbar-brand" id='my-name' href="#">Wes Marberry</a></h2>
+	  		<h2><a class="navbar-brand" id='my-name' href="#">Wes Marberry<br><span class='se-span'>Software Engineer</span></a></h2>
 	  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    	<span class="navbar-toggler-icon"></span>
 			</button>
@@ -24,10 +26,13 @@
 				        <a class="nav-link" style="color: #ABDFF1" href="#">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" style="color: #ABDFF1" href="#">About</a>
+						<a class="nav-link" style="color: #ABDFF1" href="#about">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" style="color: #ABDFF1" href="#">Portfolio</a>
+						<a class="nav-link" style="color: #ABDFF1" href="#portfolio">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" style="color: #ABDFF1" href="#contact">Contact</a>
 					</li>
 					
 			    </ul>
@@ -37,31 +42,141 @@
 	</nav>
 
 
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="" class="d-block w-100" alt="...">
+<div class="bd-example">
+  <div id="carouselExampleCaptions" class="carousel slide wd-50" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/Skyline.jpeg" class="d-block w-100" alt="...">
+        <div class='caption-background'>
+	        <div class="carousel-caption d-none d-md-block">
+	          
+	          <p class='carousel-label'>I am Chicago to the core. I love everything Chicago from the Cubs to the simple Chicago secenery</p>
+	        </div>
+        	
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/prof.jpg" class="d-block w-100" alt="...">
+        <div class='caption-background'>
+	        <div class="carousel-caption d-none d-md-block">
+	          <p class='carousel-label'>I love spending time with family and tyring new things around the city and neighboring states!</p>
+	        </div>
+        	
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/Phot02.jpg" class="d-block w-100" alt="...">
+        <div class='caption-background'>
+	        <div class="carousel-caption d-none d-md-block">
+	          <p class='carousel-label'>Taveling is a big interest of mine.  I wasnt to visit every major city in the country as well as travel outside the country.</p>
+	        </div>
+        	
+        </div>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
 
+<div class=overall-container>
+	
+	<div class="about-container" id="about">
+		<h2 class="header">About</h2>
+		<div class="paragraph-div">
+			<p>Formerly a construction project manager turned developer, I am a software engineer seeking an entry level position with a company that will allow me to grow and develop, both personally and professionally.</p><br>
+			<p>Aside from my passion for programming and problem solving I truly love living in Chicago.  I ejoy experiencing all aspects of the city from our beautiful lakefront, to our dynamic and exciting musical scene.</p><br>
+			<p>I am a big sports enthusiast. I enjoy all of Chicago's professional sports teams as well as participating in sports myself.  I will try any sport once, but my current interests are in baseball/softball, tennis, and surfing!</p><br>
+			<p>Perhaps more than any of my other personal interests I enjoy traveling the world!  I have been to Italy, Spain, and the Netherlands, but I am always looking for an opportunity to visit more places!</p>
+			
+			
+		</div>
+	</div>
+	
+	<div class="portfolio-container" id='portfolio'>
+		<div class="projects">
+			<h2 class='header'>Projects</h2>
+			<ul class="projects-list">
+				<li>
+					<a href="https://go-out-decider.herokuapp.com/"><img class='project' id='goOut' src="images/Photos/fadedGoOut.png"></a>
+					<h6 class='projectHeader'>GoOut! &nbsp; &nbsp;<span><a href=""><img class='github-image' src="images/github-logo.png"></a></span></h6>
+					<div class="click-description" id='description1'>
+						<h7 class="description-clickable1">Show Description</h7>
+						<h7 class="description-clickable2">Hide Description</h7>
+						<div class="description">
+							
+							<p>React app that solves indecsion in where to go out, whether to eat or for the night. Utilizes Google maps and Google places to decide where a user should go.</p>
+							<p>Technologies: <br> ReactJS || NodeJs || Express || MongoDB || Mongoose || Git || GitHub</p>
+						</div>
+						
+					</div>
+				</li>
+				<li>
+					<a href="https://petfinder-wesmarberry.herokuapp.com/"><img class='project' id='petFinder' src="images/Photos/fadedpetFinder.png"></a>
+					<h6 class='projectHeader'>petFinder &nbsp; &nbsp;<span><a href=""><img class='github-image'src="images/github-logo.png"></a></span></h6>
+					<div class="click-description" id='description2'>
+						<h7 class="description-clickable1">Show Description</h7>
+						<!-- <h7 class="description-clickable2">Hide Description</h7> -->
+						<div class="description">
+							<p>Express based app that utilizes object oriented programming to connect pet owners in the area. Users can post their pets and schedule times to meet with other pet owners.  Utilizing Oauth, Nodemailer and other various NodeJS technologies.</p>
+							<p>Technologies: <br> JavaScript || NodeJS || Express || MongoDB || Mongoose || Git || GitHub</p>
+							
+						</div>
+						
+					</div>
+				</li>
+				<li>
+					<a href="https://wesmarberry.github.io/Memory-Lane-Game/"><img class='project' id='memoryLane' src="images/Photos/fadedmemoryLane.png"></a>
+					<h6 class='projectHeader'>Memory-Lane-Game &nbsp; &nbsp;<span><a href=""><img class='github-image'src="images/github-logo.png"></a></span></h6>
 
+					<div class='click-description' id='description3'>
 
+						<h7 class="description-clickable1">Show Description</h7>
+						<h7 class="description-clickable2">Hide Description</h7>
+						<div class="description">
+							<p>JavaScript based game that tests a user's memory to replicate a path.  Utilizing object oriented programming to exercise a skill that humans use every day, memory</p>
+							<p>Technologies: <br> JavaScript || HTML5 || CSS || Git || GitHub</p>
+							
+						</div>
+					</div>
+					
+						
+					
+				</li>
+				<li>
+					<a href="https://wesmarberry.github.io/tomagatchi/"><img class='project' id='tomagatchi' src="images/Photos/fadedtomagatchi.png"></a>
+					<h6 class='projectHeader'>Tomagatchi &nbsp; &nbsp;<span><a href=""><img class='github-image' src="images/github-logo.png"></a></span></h6>
+					<div class="click-description" id='description4'>
+						<h7 class="description-clickable1">Show Description</h7>
+						<h7 class="description-clickable2">Hide Description</h7>
+						<div class="description">
+							<p>JavaScript based game that exercises a user's attentiveness. Utilizing object oriented programming to entertain a user.</p>
+							<p>Technologies: <br> JavaScript || HTML5 || CSS || Git || GitHub</p>
+							
+						</div>
+						
+					</div>
+				</li>
 
+			</ul>
+		</div>
+
+	</div>
+
+</div>
+
+	
 
 
 
