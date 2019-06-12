@@ -10,20 +10,20 @@
 <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 </head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-</head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
 <body>
 	
 	<nav class="navbar sticky-top navbar-expand-lg navbar-light ">
 		<div class='myContainer'>
 	  		<h2><a class="navbar-brand" id='my-name' href="#">Wes Marberry<br><span class='se-span'>Software Engineer</span></a></h2>
-	  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	    	<span class="navbar-toggler-icon"></span>
+	  		<button class="navbar-toggler" id='burgerIcon'  style="background-color: #ABDFF1"type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    	<span class="navbar-toggler-icon" ></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 			    <ul id="navUl" class="navbar-nav">
 					<li class="nav-item active">
-				        <a class="nav-link" style="color: #ABDFF1" href="#">Home <span class="sr-only">(current)</span></a>
+				        <a class="nav-link" style="color: #ABDFF1" href="#home">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" style="color: #ABDFF1" href="#about">About</a>
@@ -32,9 +32,11 @@
 						<a class="nav-link" style="color: #ABDFF1" href="#portfolio">Portfolio</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" style="color: #ABDFF1" href="#technologies">Technologies</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" style="color: #ABDFF1" href="#contact">Contact</a>
 					</li>
-					
 			    </ul>
 			</div>
 			
@@ -42,7 +44,7 @@
 	</nav>
 
 
-<div class="bd-example">
+<div id='home' class="bd-example">
   <div id="carouselExampleCaptions" class="carousel slide wd-50" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -96,7 +98,7 @@
 		<h2 class="header">About</h2>
 		<div class="paragraph-div">
 			<p>Formerly a construction project manager turned developer, I am a software engineer seeking an entry level position with a company that will allow me to grow and develop, both personally and professionally.</p><br>
-			<p>Aside from my passion for programming and problem solving I truly love living in Chicago.  I ejoy experiencing all aspects of the city from our beautiful lakefront, to our dynamic and exciting musical scene.</p><br>
+			<p>Aside from my passion for programming and problem solving I truly love living in Chicago.  I enjoy experiencing all aspects of the city from our beautiful lakefront, to our dynamic and exciting musical scene.</p><br>
 			<p>I am a big sports enthusiast. I enjoy all of Chicago's professional sports teams as well as participating in sports myself.  I will try any sport once, but my current interests are in baseball/softball, tennis, and surfing!</p><br>
 			<p>Perhaps more than any of my other personal interests I enjoy traveling the world!  I have been to Italy, Spain, and the Netherlands, but I am always looking for an opportunity to visit more places!</p>
 			
@@ -106,11 +108,25 @@
 	
 	<div class="portfolio-container" id='portfolio'>
 		<div class="projects">
-			<h2 class='header'>Projects</h2>
+			<h2 class='header'>Portfolio</h2>
 			<ul class="projects-list">
 				<li>
+					<a href="https://onthmove.herokuapp.com/"><img class='project' id='OnTheMove' src="images/Photos/fadedOnTheMove.png"></a>
+					<h6 class='projectHeader'>OnThMove &nbsp; &nbsp;<span><a href="https://github.com/wesmarberry/OnThMove"><img class='github-image' src="images/github-logo.png"></a></span></h6>
+					<div class="click-description" id='description6'>
+						<h7 class="description-clickable1">Show Description</h7>
+						<h7 class="description-clickable2">Hide Description</h7>
+						<div class="description">
+							
+							<p>React app for the daily commuter.  OnThMove was developed to assist users with maximizing productivity on their daily commutes.  Users have the option to listen to podcasts to further their knowledge, plan their daily tasks, plan their entertainment, or read valuable news articles.  OnThMove utilizes three third party API calls and data manipulation to give the users the best expereience for their daily commutes.</p>
+							<p>Technologies: <br> ReactJS || NodeJs || Express || MongoDB || Mongoose || Git || GitHub</p>
+						</div>
+						
+					</div>
+				</li>
+				<li>
 					<a href="https://go-out-decider.herokuapp.com/"><img class='project' id='goOut' src="images/Photos/fadedGoOut.png"></a>
-					<h6 class='projectHeader'>GoOut! &nbsp; &nbsp;<span><a href=""><img class='github-image' src="images/github-logo.png"></a></span></h6>
+					<h6 class='projectHeader'>GoOut! &nbsp; &nbsp;<span><a href="https://github.com/wesmarberry/NightOut-React-Front-End"><img class='github-image' src="images/github-logo.png"></a></span></h6>
 					<div class="click-description" id='description1'>
 						<h7 class="description-clickable1">Show Description</h7>
 						<h7 class="description-clickable2">Hide Description</h7>
@@ -123,8 +139,22 @@
 					</div>
 				</li>
 				<li>
+					<a href="https://go-out-decider.herokuapp.com/"><img class='project' id='inHIIT' src="images/Photos/fadedinHIIT.png"></a>
+					<h6 class='projectHeader'>inHIIT 2.0 &nbsp; &nbsp;<span><a href="https://github.com/wesmarberry/inHiit-java"><img class='github-image' src="images/github-logo.png"></a></span></h6>
+					<div class="click-description" id='description5'>
+						<h7 class="description-clickable1">Show Description</h7>
+						<h7 class="description-clickable2">Hide Description</h7>
+						<div class="description">
+							
+							<p>React and Java based app that tracks user generated workouts. Users can specify reps, interval, rest interval, and sets.  Also featured are a timer function to track intervals and a weather API call.</p>
+							<p>Technologies: <br> ReactJS || Java || SQL || CSS || Git || GitHub</p>
+						</div>
+						
+					</div>
+				</li>
+				<li>
 					<a href="https://petfinder-wesmarberry.herokuapp.com/"><img class='project' id='petFinder' src="images/Photos/fadedpetFinder.png"></a>
-					<h6 class='projectHeader'>petFinder &nbsp; &nbsp;<span><a href=""><img class='github-image'src="images/github-logo.png"></a></span></h6>
+					<h6 class='projectHeader'>petFinder &nbsp; &nbsp;<span><a href="https://github.com/wesmarberry/Project-2-Express-App"><img class='github-image'src="images/github-logo.png"></a></span></h6>
 					<div class="click-description" id='description2'>
 						<h7 class="description-clickable1">Show Description</h7>
 						<!-- <h7 class="description-clickable2">Hide Description</h7> -->
@@ -138,7 +168,7 @@
 				</li>
 				<li>
 					<a href="https://wesmarberry.github.io/Memory-Lane-Game/"><img class='project' id='memoryLane' src="images/Photos/fadedmemoryLane.png"></a>
-					<h6 class='projectHeader'>Memory-Lane-Game &nbsp; &nbsp;<span><a href=""><img class='github-image'src="images/github-logo.png"></a></span></h6>
+					<h6 class='projectHeader'>Memory-Lane-Game &nbsp; &nbsp;<span><a href="https://github.com/wesmarberry/Memory-Lane-Game"><img class='github-image'src="images/github-logo.png"></a></span></h6>
 
 					<div class='click-description' id='description3'>
 
@@ -156,7 +186,7 @@
 				</li>
 				<li>
 					<a href="https://wesmarberry.github.io/tomagatchi/"><img class='project' id='tomagatchi' src="images/Photos/fadedtomagatchi.png"></a>
-					<h6 class='projectHeader'>Tomagatchi &nbsp; &nbsp;<span><a href=""><img class='github-image' src="images/github-logo.png"></a></span></h6>
+					<h6 class='projectHeader'>Tomagatchi &nbsp; &nbsp;<span><a href="https://github.com/wesmarberry/tomagatchi"><img class='github-image' src="images/github-logo.png"></a></span></h6>
 					<div class="click-description" id='description4'>
 						<h7 class="description-clickable1">Show Description</h7>
 						<h7 class="description-clickable2">Hide Description</h7>
@@ -171,12 +201,98 @@
 
 			</ul>
 		</div>
+		<div class="resume">
+			<h2 class='header1' id='resume-header'>My Resume</h2>
+			<a href="images/2019.06.11 - Marberry_Resume.pdf" download='2019.06.11 - Marberry_Resume.pdf'><img class='project' id='resume' src="images/Photos/fadedresume.png"></a>
+		</div>
 
 	</div>
+		<div class="technologies" id='technologies'>
+			<h2 class='header1'>Technologies</h2>
+			<div class="front-end">
+				<h4>Front End</h4>
+				<ul>
+					<li>
+						<img src="images/logos/html5.png">
+						<p>HTML5</p>
+					</li>
+					<li>
+						<img src="images/logos/css-3.png">
+						<p>CSS</p>
+					</li>
+					<li>
+						<img src="images/logos/javascript.png">
+						<p>JavaScript</p>
+					</li>
+					<li>
+						<img src="images/logos/react.png">
+						<p>ReactJS</p>
+					</li>
+				</ul>
+				
+			</div>
+			<div class="back-end">
+				<h4>Back End</h4>
+				<ul>
+					<li>
+						<img src="images/logos/cogwheel.png">
+						<p>Java</p>
+					</li>
+					<li>
+						<img src="images/logos/database.png">
+						<p>SQL</p>
+					</li>
+					<li>
+						<img src="images/logos/nodejs.png">
+						<p>NodeJs</p>
+					</li>
+					<li>
+						<img id='mongoose-logo' src="images/logos/mongoose.png">
+						<p>Mongoose</p>
+					</li>
+					<li>
+						<img id='mongo-logo' src="images/mongodb_logo.png">
+						<p>MongoDB</p>
+					</li>
+					
+				</ul>
+				
+			</div>
+			<div class="version-control">
+				<h4>Version Control</h4>
+				<ul>
+					<li>
+						<img src="images/github-logo.png">
+						<p>GitHub</p>
+					</li>
+					<li>
+						<img src="images/logos/github-logo.png">
+						<p>Git</p>
+					</li>
+					
+					
+				</ul>
+				
+			</div>
 
+		</div>
+
+	<div id='contact' class='contact'>
+		<h2 class='header1'>Contact Me</h2>
+		<div class="contact-info">
+			<p>(847) 431 9376</p>
+			<p>wesmarberry@gmail.com</p>
+		</div>
+
+		<div class="social-icons">
+			<a href="https://www.facebook.com/wes.marberry" class="fa fa-3x fa-facebook"></a>
+			<a href="https://github.com/wesmarberry" class="fa fa-3x fa-github"></a>
+			<a href="https://www.linkedin.com/in/wesley-marberry/" class="fa fa-3x fa-linkedin"></a> 
+		</div>
+
+	</div>
 </div>
 
-	
 
 
 

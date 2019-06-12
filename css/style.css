@@ -3,10 +3,27 @@
 	justify-content: space-between;
 }
 
+body {
+	background-image: url(../images/Overhead2.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.nav-item:hover {
+	color: red;
+}
+
+#burgerIcon {
+	color: white;
+	margin-right: 10px;
+}
+
 .bd-example {
 	margin-top: 20px;
 	display: flex;
 	justify-content: center;
+	margin-bottom: 100px;
 }
 
 #carouselExampleCaptions {
@@ -15,13 +32,25 @@
 	border-radius: 10px;
 }
 
-.about-container, .portfolio-container {
-	background-color: #0C4A60;
-	width: 80%;
+.carousel-inner {
 	border-radius: 10px;
+}
+
+.about-container, .portfolio-container, .technologies, .contact {
+	background-color: #0C4A60;
+	width: 90%;
+	/*border-radius: 10px;*/
 	color: white;
 	margin-top: 30px;
-	margin-bottom: 20px;
+	margin-bottom: 100px;
+}
+
+#contact {
+	margin-bottom: 0px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 /*#goOut-img {
@@ -44,8 +73,17 @@
 	flex-wrap: wrap;
 }
 
+.description-clickable1:hover {
+	color: #EF6C33;
+	cursor: pointer;
+}
+
 .projects .header {
 	margin-bottom: 20px;
+}
+
+.header {
+	text-decoration: underline;
 }
 
 .github-image {
@@ -65,8 +103,71 @@
 	list-style: none;
 }
 
+.resume {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+#resume {
+	height: 400px;
+}
+
 .projects-list li {
 	width: 458px;
+}
+
+#resume-header {
+	text-decoration: underline;
+	margin-bottom: 20px;
+}
+
+.description:hover {
+	color: #EF6C33;
+	cursor: pointer;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding-bottom: -100px;
+	background-color: #EF6C33;
+	color: #0C4A60;
+	height: 50px;
+}
+
+footer div p {
+	margin-bottom: 0px;
+}
+
+.fa {
+  padding: 30px;
+  font-size: 100px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-github {
+  background: #333;
+  color: white;
+}
+.fa-linkedin {
+  background: #4875B4;
+  color: white;
 }
 
 .project {
@@ -77,6 +178,57 @@
 /*.description {
 	height: 0px;
 }*/
+
+.technologies div ul li img {
+	height: 150px;
+}
+
+.technologies {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.technologies div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.technologies div ul {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: baseline;
+	list-style: none;
+	width: 100%;
+}
+
+#mongo-logo {
+	height: 75px;
+	width: 250px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#mongoose-logo {
+	height: 75px;
+	width: 250px;
+	border-radius: 10px;
+}
+
+.technologies div ul li {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.technologies .header {
+	text-decoration: underline;
+}
 
 .show-description {
 	height: 150px;
@@ -101,11 +253,17 @@
 	padding-top: 20px;
 }
 
+.header1 {
+	color: #EF6C33;
+	padding-top: 20px;
+	text-decoration: underline;
+}
+
 /*dark blue, coral, teal, grey*/
 /*Hex: 0C4A60 / EF6C33 / ABDFF1 / E1DDDB*/
 .carousel-label {
 	color: white;
-	font-size: 10px;
+	font-size: 15px;
 }
 
 .se-span {
@@ -142,6 +300,27 @@
 	color: #EF6C33;
 }
 
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media only screen and (max-width: 985px) {
+  .carousel-label {
+	color: white;
+	font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 816px) {
+  .carousel-label {
+	color: white;
+	font-size: 10px;
+	}
+}
+
+/*
 body {
 	background-color: #ABDFF1;
-}
+}*/
