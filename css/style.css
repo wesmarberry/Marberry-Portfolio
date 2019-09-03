@@ -91,6 +91,16 @@ body {
 	border-radius: 50px;
 }
 
+.bigger-github-image {
+	height: 100px;
+	border-radius: 50px;
+	margin-bottom: 20px;
+}
+
+.bigger-github-image:hover {
+	background-color: white;
+}
+
 .github-image:hover {
 	background-color: white;
 }
