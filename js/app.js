@@ -51,5 +51,69 @@ $('.click-description').on('click', (e) => {
   })
 });
 
+// slide in function for timeline
+
+$('.left-timeline').on('mouseenter', (e) => {
+  console.log('entered timeline');
+  console.log('.left-element' + e.currentTarget.id);
+  const target = '.left-element' + e.currentTarget.id
+  $(target).animate({
+    'left': '20px'}, 500, 'linear'
+  )
+  $('.circle' + e.currentTarget.id).css('background-color', '#ABDFF1')
+
+
+})
+
+$('.left-timeline').on('mouseleave', (e) => {
+  console.log('entered timeline');
+  console.log('.left-element' + e.currentTarget.id);
+  const target = '.left-element' + e.currentTarget.id
+  
+  $('.circle' + e.currentTarget.id).css('background-color', '#0C4A60')
+
+
+})
+
+
+
+$('.right-timeline').on('mouseenter', (e) => {
+  console.log('entered timeline');
+  console.log(e.currentTarget.id);
+  $('.right-element' + e.currentTarget.id).animate({
+    'right': '20px'}, 500, 'linear'
+  )
+  $('.circle' + e.currentTarget.id).css('background-color', '#ABDFF1')
+})
+
+$('.right-timeline').on('mouseleave', (e) => {
+  console.log('entered timeline');
+  console.log('.left-element' + e.currentTarget.id);
+  const target = '.left-element' + e.currentTarget.id
+  
+  $('.circle' + e.currentTarget.id).css('background-color', '#0C4A60')
+})
+
+
+$('.timeline').on('mouseleave', () => {
+  console.log('left timeline');
+  $('.right-element1').animate({
+    'right': '-380px'}, 200, 'linear'
+  )
+  $('.right-element2').animate({
+    'right': '-380px'}, 200, 'linear'
+  )
+  $('.left-elementone').animate({
+    'left': '-380px'}, 200, 'linear'
+  )
+  $('.left-elementtwo').animate({
+    'left': '-380px'}, 200, 'linear'
+  )
+})
+
+
+
+
+
 
 

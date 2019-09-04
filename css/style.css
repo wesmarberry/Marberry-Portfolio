@@ -8,6 +8,7 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	font-family: 'Fjalla One', sans-serif;
+
 }
 
 .nav-item:hover {
@@ -104,6 +105,131 @@ body {
 .github-image:hover {
 	background-color: white;
 }
+
+.timeline {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.left-timeline {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	height: 200px;
+	display: flex; 
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 40px;
+}
+
+/*media to erase timeline at 855px*/
+
+@media only screen and (max-width: 855px) {
+  .line, .circleone, .circletwo, .circle1, .circle2 {
+	display: none;
+	
+	}
+}
+
+.left-elementone, .left-elementtwo {
+	position: absolute;
+	left: -380px;
+	background-color: #0C4A60;
+	height: 200px;
+	width: 380px;
+	border: 4px solid black;
+	border-radius: 5px;
+	/*box-shadow: 8px 12px black;*/
+}
+
+.right-timeline {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	height: 200px;
+	display: flex; 
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 40px;
+}
+
+/*creative circle*/
+
+
+/*creative hotlist*/
+
+.panel-image {
+	height: 100px;
+	border-radius: 200px;
+	background-color: grey;
+	float: left;
+	margin: 20px 20px 0px 20px;
+}
+
+.panel-text {
+	margin-top: 20px;
+	color: #ABDFF1;
+	margin-right: 20px;
+}
+
+.panel-description {
+	margin-left: 20px;
+}
+
+.panel-header {
+	text-decoration: underline;
+}
+
+.years {
+	font-style: italic;
+}
+
+.line {
+	width: 5px;
+	height: 1000px;
+	position: absolute;
+	top: 120px;
+	background-color: black;
+}
+
+.right-element1, .right-element2 {
+	position: absolute;
+	right: -380px;
+	background-color: #0C4A60;
+	height: 200px;
+	width: 380px;
+	border: 4px solid black;
+	border-radius: 5px;
+}
+
+.circleone, .circletwo, .circle1, .circle2 {
+	height: 30px;
+	width: 30px;
+	border-radius: 30px;
+	background-color: #0C4A60;
+	border: 5px solid black;
+}
+
+.timeline-header {
+	color: #EF6C33;
+	background-color: #0C4A60;
+	text-decoration: underline;
+	padding: 30px;
+	border-radius: 10px;
+}
+
+/*.right-timeline {
+	position-right: -200px;
+	background-color: red;
+	height: 100px;
+	width: 200px;
+}*/
 
 .click-description {
 	margin-bottom: 10px;
@@ -255,6 +381,7 @@ footer div p {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
 }
 
 
