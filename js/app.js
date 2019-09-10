@@ -98,16 +98,16 @@ $('.right-timeline').on('mouseleave', (e) => {
 $('.timeline').on('mouseleave', () => {
   console.log('left timeline');
   $('.right-element1').animate({
-    'right': '-380px'}, 200, 'linear'
+    'right': '-450px'}, 200, 'linear'
   )
   $('.right-element2').animate({
-    'right': '-380px'}, 200, 'linear'
+    'right': '-450px'}, 200, 'linear'
   )
   $('.left-elementone').animate({
-    'left': '-380px'}, 200, 'linear'
+    'left': '-450px'}, 200, 'linear'
   )
   $('.left-elementtwo').animate({
-    'left': '-380px'}, 200, 'linear'
+    'left': '-450px'}, 200, 'linear'
   )
 })
 
