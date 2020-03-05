@@ -130,13 +130,13 @@ body {
 /*media to erase timeline at 855px*/
 
 @media only screen and (max-width: 855px) {
-  .line, .circleone, .circletwo, .circle1, .circle2 {
+  .line, .circleone, .circletwo, .circle1, .circle2, .circlethree {
 	display: none;
 	
 	}
 }
 
-.left-elementone, .left-elementtwo {
+.left-elementone, .left-elementtwo, .left-elementthree {
 	position: absolute;
 	left: -450px;
 	background-color: #0C4A60;
@@ -192,7 +192,7 @@ body {
 
 .line {
 	width: 5px;
-	height: 1000px;
+	height: 1300px;
 	position: absolute;
 	top: 120px;
 	background-color: black;
@@ -208,7 +208,7 @@ body {
 	border-radius: 5px;
 }
 
-.circleone, .circletwo, .circle1, .circle2 {
+.circleone, .circletwo, .circle1, .circle2, .circlethree {
 	height: 30px;
 	width: 30px;
 	border-radius: 30px;
@@ -446,7 +446,7 @@ footer div p {
 }
 
 @media only screen and (min-width: 955px) {
-  .left-elementone, .right-element1, .left-elementtwo, .right-element2 {
+  .left-elementone, .right-element1, .left-elementtwo, .right-element2, .left-elementthree {
 	width: 450px;
 	
 	}
